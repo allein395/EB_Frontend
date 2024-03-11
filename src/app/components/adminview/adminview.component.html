@@ -1,0 +1,9 @@
+<h1>Admin's Dashboard</h1>
+
+<mat-toolbar color="primary">
+    <input class="form-controlc px-5" type="text" placeholder="Search" [(ngModel)]="searchText">
+    <h3 color="primary" class="mr-5">Dashboard</h3>
+    <button mat-raised-button color="primary"routerLink="/eventadminlist" class="mr-5">Event</button>
+    <button mat-raised-button color="primary"routerLink="/customeradmin" class="mr-5">Customer</button>
+    <button mat-raised-button color="primary" routerLink="/orglist" class="mr-5">Organizer</button>
+</mat-toolbar>

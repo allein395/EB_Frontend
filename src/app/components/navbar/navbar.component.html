@@ -1,0 +1,18 @@
+<div class ="header">
+    <nav>
+        <a href="index.html"><img src="assets/logo.jpg"></a>
+
+        <div class="nav-links" id="navLinks" [style.width.px]="showMenu ? 350 : 0">
+          <i class="fa fa-times" (click)="toggleMenu()"></i>
+            <ul>         
+                <li><a routerLink="/navhead">HOME</a></li>
+                <li><a href="#"(click)="scrollToSection('section1')">EVENTS</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" (click)="toggleMenu()"></i>
+    </nav>
+
+
+</div>

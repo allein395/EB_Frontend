@@ -1,0 +1,37 @@
+
+<div class="container" id="section1">
+    <div class="card">
+      <form (ngSubmit)="onSubmit()">
+        <label>Registration of Event</label>
+  
+        <div class="mb-3">
+          <label for="name" class="form-label">Event Name</label>
+          <input type="text" class="form-control" id="name" required [(ngModel)]="event.eventName" name="name">
+        </div>
+  
+        <div class="mb-3">
+          <label for="name" class="form-label">People Capacity</label>
+          <input type="text" class="form-control" id="peopleCapacity" required [(ngModel)]="event.peopleCapacity" name="peopleCapacity">
+        </div>
+  
+        <div class="mb-3">
+          <label for="name" class="form-label">Location</label>
+          <input type="text" class="form-control" id="location" required [(ngModel)]="event.location" name="location">
+        </div>
+       <!-- <div class="mb-3">
+          <label for="name" class="form-label">Upload Relative Imgae</label>
+          <input type="file" class="form-control" id="image" required [(ngModel)]="event.image" name="image">
+        </div>-->
+        <div class="mb-3">
+          <label for="name" class="form-label">Description:</label>
+          <input type="text" class="form-control" id="description" required [(ngModel)]="event.description" name="location">
+        </div>
+        <div class="mb-3">
+          <label for="name" class="form-label">Price:</label>
+          <input type="text" class="form-control" id="description" required [(ngModel)]="event.price" name="location">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+  

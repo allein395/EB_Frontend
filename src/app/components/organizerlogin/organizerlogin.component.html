@@ -1,0 +1,23 @@
+<div class="login-container">
+    <h2>{{ isLoginMode ? 'Login' : 'Sign Up' }}</h2>
+    <form class="login-form" (ngSubmit)="onSubmit()">
+      <label for="organizerName" *ngIf="!isLoginMode">Organizer Name:</label><br>
+      <input type="text" id="organizerName" [(ngModel)]="organizer.organizerName" name="organizerName" *ngIf="!isLoginMode" required><br>
+  
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" [(ngModel)]="organizer.email" name="email" required><br>
+  
+      <label for="organizerPass">Password:</label>
+      <input type="organizerPass" id="organizerPass" [(ngModel)]="organizer.organizerPass" name="organizerPass" required>
+  
+      <br><br><button type="submit" routerLink="/orgview">{{ isLoginMode ? 'Login' : 'Sign Up' }}</button>
+    </form>
+  
+    <p>
+      {{ isLoginMode ? 'Don\'t have an account? ' : 'Already have an account? ' }}
+      <a href="javascript:void(0)" (click)="toggleMode()">
+        {{ isLoginMode ? 'Sign up' : 'Login' }}
+      </a>
+     </p>
+</div>
+

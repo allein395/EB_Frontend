@@ -1,0 +1,13 @@
+
+<div class="my-container border border-dark">
+  <div class="row g-0">
+    <div class="col-4 p-4">
+      <div class="card" *ngFor="let ev of eventcat | async">  
+        <div class="card-body">
+          <h5 class="card-title" (click)="gotolist()">{{ev.eventCategoryName}}</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

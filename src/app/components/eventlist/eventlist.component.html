@@ -1,0 +1,33 @@
+<div class="mx-auto" style="width: 70%;">
+  <div class="card-header"><h5>Event List</h5>
+  <div class="list-view" *ngFor="let e of event | async">
+    <br>
+      <div class="card"   > 
+        <div class="row">
+        <!-- 
+          <div class="col-md-4 overflow-hidden d-flex justify-content-center align-items-center">
+            <img src="assets/8.jpg" alt="Product Image" class="img-fluid rounded-start">
+          </div> --> 
+                <div class="col">
+                  <div class="card-body">
+                    <h5 class="card-title title">{{e.eventName}}</h5>
+                    <p class="card-text my2 text-primary">People capacity: {{e.peopleCapacity}}</p>
+                    <p class="card-text description">location: {{e.location}}</p>
+                    <p class="card-text description">description: {{e.description}}</p>
+                    <p class="card-text my2 text-success">Price: {{e.price}}</p>
+                    
+                    <button (click)="deleteEvent(e.eventId)" class="btn btn-danger">Delete</button>
+                    <button (click)="eventDetails(e.eventId)" class="btn btn-info" style="margin-left:10px">Details</button>
+                    <button (click)="updateEvent(e.eventId)" class="btn btn-info"  style="margin-left:10px">Edit</button>
+                   
+                  </div>
+                </div>
+              </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+            
+            
+
+

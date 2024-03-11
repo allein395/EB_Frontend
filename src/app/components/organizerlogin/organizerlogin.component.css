@@ -1,0 +1,28 @@
+.login-container {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Adjust the height as needed */
+    
+}
+  
+  .login-form {
+    width: 300px; /* Adjust the width as needed */
+    height: 60vh;
+    padding: 20px;
+    border: 2px solid #3f115a;
+    border-radius: 10px;
+    background-image: linear-gradient(rgba(5, 84, 104, 0.7),rgba(196, 207, 250, 0.419)),url("C:/Users/Admin/Desktop/ANGULAR TUTORIAL/practiceFrontend/src/assets/b.jpg");
+    background-size: cover;
+    /* background-color: #fff; */
+    box-shadow: 0 0 10px rgba(136, 37, 95, 0.514);
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  p {
+    text-align: center;}

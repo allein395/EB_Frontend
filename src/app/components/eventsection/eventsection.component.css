@@ -1,0 +1,26 @@
+/*----Event---*/
+
+.event{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 40px;
+  }
+  
+  h1{
+    font-size: 36px; 
+    font-weight: 600;
+  }
+  p{
+    color: #2e2929;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+  }
+  
+  h2{
+    padding-top: 10px;
+  }
+
+  

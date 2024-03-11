@@ -1,0 +1,93 @@
+<!--<section>
+
+    <nav >
+          <a class="navbar-brand" href="#">
+            <img src="assets\logo.jpg" alt="Bootstrap" width="160" height="50">
+          </a>
+        
+
+          <div class="box">
+            <a href="#">
+                <input type="text" placeholder="search">
+                <i class="fas fa-search"></i>
+            </a>
+           </div>
+
+           
+           <i class="fa-duotone fa-user" (click)="openDialog()"></i>
+          
+    
+          <div class="nav-links" id="navLinks" [style.width.px]="showMenu ? 350 : 0">
+            <i class="fa fa-times" (click)="toggleMenu()"></i>
+              <ul>         
+                  <li><a routerLink="/catlist">HOME</a></li>
+                  <li><a routerLink="/addcat">AddEventCategory</a></li>
+                  <li><a routerLink="/addEvent" (click)="scrollToSection('section1')">AddEvent</a></li>
+                  <li><a routerLink="/list">Eventlist</a></li>
+                  <li><a href="">CONTACT</a></li>
+              </ul>
+          </div>
+          <i class="fa fa-bars" (click)="toggleMenu()"></i>
+          
+      </nav>
+</section>
+-->
+<!--This is for card design-->
+<h2>These are UpComimg Event </h2>
+<section class="policy-product">
+  <div class="containers" *ngFor="let e of event | async">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="policy-p-card">
+          <div class="date">
+            <h3>25</h3>
+            <h4>Jun</h4>
+          </div>
+          <div class="policy-img">
+            <img src="..\assets\t3.jpg" alt="p1">
+          </div>
+          <h5 class="card-title title">{{e.eventName}}</h5>
+          <p class="card-text my2 text-primary">People capacity: {{e.peopleCapacity}}</p>
+          <p class="card-text description">location: {{e.location}}</p>
+          <p class="card-text description">description: {{e.description}}</p>
+          <p class="card-text my2 text-success">Price: {{e.price}}</p>
+          <a href="" class="read-more">Book Now <i class="fa fa-caret-right mr-5"></i></a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="policy-p-card">
+          <div class="date">
+            <h3>14</h3>
+            <h4>Feb</h4>
+          </div>
+          <div class="policy-img">
+            <img src="..\assets\t4.jpg" alt="p1">
+          </div>
+          <h5 class="card-title title">{{e.eventName}}</h5>
+          <p class="card-text my2 text-primary">People capacity: {{e.peopleCapacity}}</p>
+          <p class="card-text description">location: {{e.location}}</p>
+          <p class="card-text description">description: {{e.description}}</p>
+          <p class="card-text my2 text-success">Price: {{e.price}}</p>
+          <a href="" class="read-more">Book Now <i class="fa fa-caret-right mr-5"></i></a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="policy-p-card">
+          <div class="date">
+            <h3>15</h3>
+            <h4>March</h4>
+          </div>
+          <div class="policy-img">
+            <img src="..\assets\dj.jpg" alt="p1">
+          </div>
+          <h5 class="card-title title">{{e.eventName}}</h5>
+          <p class="card-text my2 text-primary">People capacity: {{e.peopleCapacity}}</p>
+          <p class="card-text description">location: {{e.location}}</p>
+          <p class="card-text description">description: {{e.description}}</p>
+          <p class="card-text my2 text-success">Price: {{e.price}}</p>
+          <a href="" class="read-more">Book Now <i class="fa fa-caret-right mr-5"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
